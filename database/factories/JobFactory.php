@@ -22,7 +22,7 @@ class JobFactory extends Factory
             'title' => fake()->jobTitle,
             'salary' => fake()->randomElement(['$50,000 USD', '$90,000 USD', '$150,000 USD']),
             'location' => 'Remote',
-            'schedule' => 'Full Time',
+            'schedule' => fake()->randomElement(['Full Time', 'Part Time']),
             'url' => fake()->url,
             'featured' => false,
         ];
